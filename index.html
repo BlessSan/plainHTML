@@ -30,4 +30,12 @@
     ></iframe
   ></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <script>
+    window.onload = function () {
+      window.dataLayer.push({
+        event: "page_load",
+        referrer: document.location.ancestorOrigins[0],
+      });
+    };
+  </script>
 </body>
