@@ -1,41 +1,44 @@
 <!DOCTYPE html>
-<head>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-  </script>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-KTV2X7FP");
-  </script>
-  <!-- End Google Tag Manager -->
-  <script>
-    window.onload = function () {
-      window.dataLayer.push({
-        event: "page_load",
-        referrer: document.location.ancestorOrigins[0],
-      });
-    };
-  </script>
-</head>
-<body>
-  <h1>Hello this is a page with google tag</h1>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript
-    ><iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-KTV2X7FP"
-      height="0"
-      width="0"
-      style="display: none; visibility: hidden"
-    ></iframe
-  ></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-</body>
+<html>
+  <head>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KTV2X7FP");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+      window.onload = function () {
+        console.log("page loaded");
+        window.dataLayer.push({
+          event: "page_load",
+          referrer: document.location.ancestorOrigins[0],
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Hello this is a page with google tag</h1>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KTV2X7FP"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  </body>
+</html>
