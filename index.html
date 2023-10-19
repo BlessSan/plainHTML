@@ -17,6 +17,14 @@
     })(window, document, "script", "dataLayer", "GTM-KTV2X7FP");
   </script>
   <!-- End Google Tag Manager -->
+  <script>
+    window.onload = function () {
+      window.dataLayer.push({
+        event: "page_load",
+        referrer: document.location.ancestorOrigins[0],
+      });
+    };
+  </script>
 </head>
 <body>
   <h1>Hello this is a page with google tag</h1>
@@ -30,10 +38,4 @@
     ></iframe
   ></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <script>
-    window.dataLayer.push({
-      event: "page_load",
-      referrer: document.location.ancestorOrigins[0],
-    });
-  </script>
 </body>
