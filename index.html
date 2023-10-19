@@ -19,13 +19,13 @@
     </script>
     <!-- End Google Tag Manager -->
     <script>
-      window.onload = function () {
+      document.addEventListener("DOMContentLoaded", function () {
         console.log("page loaded");
         window.dataLayer.push({
           event: "page_load",
           referrer: document.location.ancestorOrigins[0],
         });
-      };
+      });
     </script>
   </head>
   <body>
